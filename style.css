@@ -221,6 +221,7 @@ span{
     font-size: 1.2rem;
     font-weight: 500;
     margin-bottom: 20px;
+    transition: ease .4s;
 }
 .row p{
     font-size: 15px;
@@ -230,10 +231,17 @@ span{
     font-size: 1.2rem;
     font-weight: 500;
     margin-bottom: 20px;
+    transition: ease .4s;
 }
 .row2 p{
     font-size: 15px;
     line-height: 30px;
+}
+.row:hover h3{
+    color: #ec6b25;
+}
+.row2:hover h3{
+    color: #ec6b25;
 }
 .contact{
     background-color: var(--main-color);
