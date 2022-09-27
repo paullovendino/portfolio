@@ -350,7 +350,7 @@ span{
     font-size: 12px;
     transform: translateY(-20px);
 }
-.contactform .input-box input[type="submit"]{
+.contactform .input-box button{
     width: 100px;
     color: black;
     background-color: #ec6b25;
@@ -359,12 +359,11 @@ span{
     padding: 10px;
     transition: ease 0.5s;
 }
-.contactform .input-box input[type="submit"]:hover{
+.contactform .input-box button:hover{
     background-color: var(--main-color);
     border: solid 0.5px #ec6b25;
     color: white;
 }
-
 @media(max-width: 990px) {
     .contact{
         padding: 50px
