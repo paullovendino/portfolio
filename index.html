@@ -11,17 +11,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/scrollreveal"></script>
     
 </head>
 <body>
-    <div class="hero">
+    <div class="hero" id="top">
         <nav>
             <img src="img/logo.png" class="logo">
             <ul>
                 <li><a href="#">HOME</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">PORTFOLIO</a></li>
-                <li><a href="#">CONTACT</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#moreinfos">MORE INFOS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
                 <!-- <li><a href="#">HIRE ME</a></li> -->
             </ul>
         </nav>
@@ -33,77 +34,75 @@
 
         
         <div class="about">
-            <p>Hello,</p>
-            <h1>I'm <span>John Paul</span></h1>
-            <h1>Lovendino</h1>
-            <p> <b>➤</b>  A BSCS Student and a Future Web Developer.</p>
-            <a href="#">Learn About me</a>
+            <p class="greetings">Hello,</p>
+            <h1 class="greetings">I'm <span>John Paul</span></h1>
+            <h1 class="greetings">Lovendino</h1>
+            <p class="greetings"> <b>➤</b>  A BSCS Student and a Future Web Developer.</p>
+            <a class="greetings" href="#about">Learn About me</a>
         </div>        
     </div>
     
 
     <!-- ABOUT SECTION -->
 
-    <section class="secondpart" >
-        <div class="aboutpart">
-            <img src="img/lovendino.jpg" style="height: 600px"; width="450px";>
+    <section class="secondpart" id="about" >
+        <div class="aboutmain">
+            <img src="img/lovendino.jpg" style="height: 600px"; width="300px";>
         <div class="aboutinfo">
             <h2>About <span>Me</span></h2>
             <p> I'm John Paul Lovendino, 20 years old and a 3rd Year College Student currently taking Bachelor of Science in Computer Science at 
                 Pamantasan ng Lungsod ng Pasig. I am also a musician and  I play bass guitar, acoustic guitar, and keyboard in my team. <br><br/>
 
                 I am a person who is eager to do things and I'm willing to work with others and to learn new things, skills, and knowledge. I am
-                a shy type person but I am willing to interact with other people. I am able to work well both in a team environment as well as my 
-                own initiative and adaptable to all challenging situations.
-
-
-                
+                a shy type person but I am willing to interact with other people. I can work well in a team environment as well as on my own initiative,
+                and I can adjust to any difficult circumstances.   
             </p>
         </div>
     </div>
     </section>
 
-    <section class="moreinfos">
+    <section class="moreinfos" id="moreinfos">
         <div class="centeritem">
-            <h3>MORE ABOUT ME?</h3>
+            <h3>MORE <span>ABOUT</span> ME?</h3>
         </div>
     
 
         <div class="more-contents">
             <div class="row">
                 <h3>WHAT ARE THE THINGS I LIKE TO DO?</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae soluta obcaecati, neque suscipit a tempora 
-                    reprehenderit quibusdam aspernatur repellendus! Magnam, necessitatibus quia soluta cumque laboriosam dolorem
-                    sapiente cupiditate reiciendis ullam.</p>
+                <p>I love practicing coding every night. I like challenging myself with difficult things and situations even though
+                    I don't know what the outcome will be. I like to explore things that interest me. I love playing instruments also that's why
+                    I became a musician. I love putting hardwork on the things I love.
+                </p>
             </div>
-            <div class="row">
+            <div class="row2">
                 <h3>WHAT'S MY CHILDHOOD DREAM?</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae soluta obcaecati, neque suscipit a tempora 
-                    reprehenderit quibusdam aspernatur repellendus! Magnam, necessitatibus quia soluta cumque laboriosam dolorem
-                    sapiente cupiditate reiciendis ullam.</p>
+                <p>When I was a child, I always dreamed about being a Pro Player. I love playing games since I was a child until now. I also want
+                    to be a streamer also. I also want to be a superhero when I was a child because I love watching cartoons that time. And also, one of
+                    my dreams is being a musician.
+                </p>
             </div>
             <div class="row">
                 <h3>WHAT ARE MY DREAM PLACES TO VISIT/LIVE?</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae soluta obcaecati, neque suscipit a tempora 
-                    reprehenderit quibusdam aspernatur repellendus! Magnam, necessitatibus quia soluta cumque laboriosam dolorem
-                    sapiente cupiditate reiciendis ullam.</p>
+                <p>I'd want to travel to Boracay Island. despite having costly hotels, meals, and activities. Hopefully, everything will be worthwhile in the end.
+                    I also want to visit Japan since the country is know for its modern and advanced technologies. As a future developer, I also want to see and 
+                    experience those gadgets and technologies. </p>
             </div>
-            <div class="row">
+            <div class="row2">
                 <h3>HOW DO I SEE MYSELF 5 YEARS FROM NOW</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae soluta obcaecati, neque suscipit a tempora 
-                    reprehenderit quibusdam aspernatur repellendus! Magnam, necessitatibus quia soluta cumque laboriosam dolorem
-                    sapiente cupiditate reiciendis ullam.</p>
+                <p> First, I see myself completing my education in college. 5 Years from now, I see myself having a stable well-paying job and working in a company that helps me to learn new
+                    things and help me to grow in my industry. I see myself surrounded by supportive and non-toxic people that will help me to grow more.
+                </p>
             </div>
         </div>
     </section>
 
     <!-- CONTACT SECTION -->
 
-    <section class="contact">
+    <section class="contact" id="contact">
         <div class="centertxt">
             <h1>CONTACT <span>ME</span></h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, fuga ipsum blanditiis reiciendis dolore nostrum! Autem, 
-                earum a iste porro temporibus ipsum placeat harum non asperiores quod molestias fuga nostrum.</p>
+            <p>I would love to respond to your inquiries and help you with your concern. Feel free to get in touch with me.</p>
         </div>
         <div class="container">
             <div class="contactInfo">
@@ -163,15 +162,42 @@
         <div class="footercontent">
           <h4><b>FOLLOW <span>ME</span></b></h4>
           <ul class="socials">
-            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-            <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+            <li><a href="https://www.facebook.com/profile06142002" target="_blank"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="https://twitter.com/paul_lovendino" target="_blank"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="https://www.instagram.com/_jampol/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="https://www.tiktok.com/@johnpaullovendino14" target="_blank"><i class="fa fa-tiktok"></i></a></li>
           </ul>
         </div>
-        <div class="footer2">
+        <div class="copyright">
             <p>Copyright &copy;2022 BSCS3A. Designed by <span>LOVENDINO, JOHN PAUL</span></p>
         </div>
+    </footer>
 
+    <a class="topbtn" href="#top"><i class="fa-sharp fa-solid fa-arrow-up"></i></a>
+        <script>
+            ScrollReveal({
+                reset: true,
+                distance: '60px',
+                duration: 2500,
+                delay: 400
+            });
+
+            ScrollReveal().reveal('nav', {delay: 50, origin:'top'});
+            ScrollReveal().reveal('.greetings', {delay: 500});
+            ScrollReveal().reveal('.images', {delay: 400, origin: 'left'});
+            ScrollReveal().reveal('.aboutmain', {delay: 200, origin: 'left'});
+            ScrollReveal().reveal('.aboutinfo', {delay: 800, origin: 'left'});
+            ScrollReveal().reveal('.centeritem', {delay: 200});
+            ScrollReveal().reveal('.row', {delay: 500, origin: 'left', interval: 300});
+            ScrollReveal().reveal('.row2', {delay: 500, origin: 'right', interval: 300});
+            ScrollReveal().reveal('.centertxt', {delay: 400});
+            ScrollReveal().reveal('.box', {delay: 800, origin: 'left', interval: 300});
+            ScrollReveal().reveal('.contactform', {delay: 800, origin: 'right'});
+            ScrollReveal().reveal('.footercontent h4', {delay: 300, origin: 'top'});
+            ScrollReveal().reveal('.socials', {delay: 300, origin: 'bottom'});
+            ScrollReveal().reveal('.copyright', {delay: 300, origin: 'top'});
+            
+            
+        </script>
 </body>
 </html>

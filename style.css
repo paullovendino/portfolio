@@ -4,7 +4,6 @@
     font-family: 'Quicksand', sans-serif;
     color:white;
     scroll-behavior: smooth;
-    list-style: none;
 }
 body{
     overflow-x: hidden;
@@ -14,6 +13,23 @@ body{
     --main-color: #020312;
     --secondary-color: #12141c;
 }
+.topbtn{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background-color: #ec6b25;
+    bottom: 40px;
+    right: 50px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 55px;
+    border-radius: 15px;
+}
+.topbtn i{
+    color: #020312;
+    font-size: 25px;
+}
+
 .hero{
     width: 100%;
     height: 100vh;
@@ -117,37 +133,36 @@ span{
     -webkit-mask-image: linear-gradient(to left, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 65%);
 }
 
-
-
 .secondpart{
     /* background-color: var(--secondary-color); */
     background-color: var(--secondary-color);
-    height: auto;
-    width: 100vw;
-    padding: 100px 0px;
+    /* padding: 100px 14%;
+    width: 75%; */
+    padding-top: 100px;
+    width: 110%;
+    
 }
-
 .secondpart img{
     height: auto;
-    width: 430px;
+    width: auto;
     opacity: 0.6;
-    border-radius: 10%;
+    border-radius: 15%;
 }
-
-.aboutinfo{
-    width: 550px;
-
-    text-align: center;
-}
-
-.aboutpart{
+.aboutmain{
     width: 1130px;
-    max-width: 95%;
-    margin: 0 auto;
+    max-width: 80%;
+    margin: auto;
+    margin-left: 27vh;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    padding-bottom: 100px;
 }
+.aboutinfo{
+    width: 50%;
+    text-align: center;
+}
+
 
 .aboutinfo h2{
     font-size: 75px;
@@ -167,19 +182,15 @@ span{
 }
 .centeritem h3{
     color: white;
-    font-size: 30px;
+    font-size: 50px;
     font-weight: 300;
     letter-spacing: 6px;
     cursor: pointer;
-    transition: ease 0.3s;
     
-}
-.centeritem h3:hover{
-    color: #ec6b25;
 }
 .more-contents{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(380px, auto));
     grid-gap: 2rem;
     align-items: center;
     margin-top: 4.4rem;
@@ -189,6 +200,7 @@ span{
 .moreinfos{
     background-color: var(--secondary-color);
     padding: 24px 14%;
+    width: 75%;
 }
 .row{
     background-color: var(--main-color);
@@ -196,6 +208,14 @@ span{
     border-radius: 20px;
     cursor: pointer;
     transition: all .40s;
+}
+.row2{
+    background-color: var(--main-color);
+    padding: 60px 35px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all .40s;
+    
 }
 .row h3{
     font-size: 1.2rem;
@@ -206,8 +226,15 @@ span{
     font-size: 15px;
     line-height: 30px;
 }
-
-
+.row2 h3{
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.row2 p{
+    font-size: 15px;
+    line-height: 30px;
+}
 .contact{
     background-color: var(--main-color);
     height: auto;
@@ -277,11 +304,14 @@ span{
     font-size: 30px;
     font-weight: 500;
     padding-bottom: 30px;
+    text-align: center;
 }
 .contactform .input-box{
     position: relative;
     width: 100%;
     margin-top: 10px;
+    display: flex;
+    justify-content: center;
 }
 .contactform .input-box input,
 .contactform .input-box textarea{
@@ -314,6 +344,7 @@ span{
 }
 .contactform .input-box input[type="submit"]{
     width: 100px;
+    color: black;
     background-color: #ec6b25;
     border-radius: 10px;
     cursor: pointer;
@@ -323,6 +354,7 @@ span{
 .contactform .input-box input[type="submit"]:hover{
     background-color: var(--main-color);
     border: solid 0.5px #ec6b25;
+    color: white;
 }
 
 @media(max-width: 990px) {
@@ -351,9 +383,10 @@ span{
         font-size: 15px;
     }
 }
-@media (max-width: 1050px) {
-    .aboutpart{
+@media (max-width: 1070px) {
+    .aboutmain{
         flex-direction: column;
+        margin: 0;
     }
 }
 
@@ -364,7 +397,6 @@ footer{
     font-family: 'Quicksand', sans-serif;
     padding-top: 20px;
     color: #fff;
-    
 }
 .footercontent{
     display: flex;
@@ -383,13 +415,13 @@ footer{
     list-style: none;
     display: flex;
     align-items: center;
-    justify-content: center;
     margin: 1rem 0 3rem 0;
+    width: 40%;
+    justify-content: space-around;
 }
 .footercontent .socials li{
-    margin: 0 10px;
-    padding-left: 20px;
-    padding-right: 50px;
+    list-style: none;    
+    
 }
 .footercontent .socials a{
     text-decoration: none;
@@ -402,17 +434,12 @@ footer{
     color: #ec6b25;
     transition: all .5s;
 }
-.footer2{
+.copyright{
     background-color: var(--secondary-color);
-    width: 100vw;
-    padding: 0;
+    height: auto;
+    justify-content: center;
     text-align: center;
-}
-.footer2 p{
-    font-size: 14px;
-    word-spacing: 2px;
-}
-.footer2 p b{
-    text-transform: uppercase;
-    opacity: .6;
+    align-items: center;
+    width: auto;
+    padding: 0px 14%;
 }
